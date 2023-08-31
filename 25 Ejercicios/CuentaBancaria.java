@@ -1,6 +1,6 @@
-class CuentaBancaria{
+public class CuentaBancaria{
     String titular;
-    Double balance;
+    static Double balance;
     CuentaBancaria(String titular, Double balance){
         this.titular= titular;
         this.balance=balance;
@@ -15,6 +15,12 @@ class CuentaBancaria{
             System.out.println("No tiene suficiente saldo");
         }
     }
+    public static double obtenerBalance(){
+        return balance;
+    }
     public static void main(String[] args) {
+        CuentaBancaria p= new CuentaBancaria("Juan", 10000.0);
+        CuentaBancaria.obtenerBalance();
+        System.out.println(CuentaBancaria.obtenerBalance());
     }
 }
