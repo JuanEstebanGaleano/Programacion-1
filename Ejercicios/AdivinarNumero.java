@@ -5,12 +5,13 @@ import java.util.Scanner;
  */
 public class AdivinarNumero {
     public static void main(String[] args) {
-    Scanner scanner= new Scanner(System.in);
-    int numero;
-    do {
-        System.out.println("Ingrese el número 5");
-        numero= scanner.nextInt();
-    } while (numero!=5);
-    System.out.println("!Correcto!"+" Has ingresado el número" +numero);
+    try (Scanner scanner = new Scanner(System.in)) {
+        int numero;
+        do {
+            System.out.println("Ingrese el número 5");
+            numero= scanner.nextInt();
+        } while (numero!=5);
+        System.out.println("!Correcto!"+" Has ingresado el número " +numero);
+    }
     }
 }
