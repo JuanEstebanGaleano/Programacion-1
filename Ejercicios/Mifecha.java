@@ -1,12 +1,12 @@
 // Definición de la clase Fecha
-public class Fecha {
+public class Mifecha {
     // Atributos de la clase
     private int día;
     private int mes;
     private int año;
 
     // Constructor de la clase
-    public Fecha(int día, int mes, int año) {
+    public Mifecha(int día, int mes, int año) {
         this.día = día;
         this.mes = mes;
         this.año = año;
@@ -20,7 +20,7 @@ public class Fecha {
     // Método main para probar la clase
     public static void main(String[] args) {
         // Crear una instancia de Fecha
-        Fecha miFecha = new Fecha(31, 8, 2023);
+        Mifecha miFecha = new Mifecha(31, 8, 2023);
 
         // Mostrar la fecha en formato DD/MM/AAAA
         System.out.print("Fecha: ");
