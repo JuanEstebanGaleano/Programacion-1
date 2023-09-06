@@ -1,7 +1,7 @@
 public class Reloj {
-    public int horas;
-    public int minutos;
-    public int segundos;
+    private int horas;
+    private int minutos;
+    private int segundos;
 
     public void establecerHora(int horas, int minutos, int segundos) {
         if (horas >= 0 && horas <= 23 && minutos >= 0 && minutos <= 59 && segundos >= 0 && segundos <= 59) {
