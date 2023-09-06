@@ -1,3 +1,4 @@
+//Programa que calcule el valor de una venta
 import javax.swing.JOptionPane;
 public class CalcularElValorDeunaVenta {
     public static void main(String[] args) {
