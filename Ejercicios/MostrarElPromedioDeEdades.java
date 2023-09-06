@@ -5,7 +5,7 @@ public class MostrarElPromedioDeEdades {
 
   edad1=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la primera edad"));
   edad2=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la segunda edad"));
-  double result=(edad1+edad2)/2;
+  int result=(edad1+edad2)/2;
   JOptionPane.showMessageDialog(null,"El promedio de las edades entre dos personas: "+result);
   }
 }
