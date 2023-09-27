@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProyecVivero",
+            "request": "launch",
+            "mainClass": "com.example.Vivero.ProyecVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "ProyecVivero",
+            "request": "launch",
+            "mainClass": "com.Vivero.ProyecVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "prueba",
+            "request": "launch",
+            "mainClass": "prueba",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
             "name": "prueba",
             "request": "launch",
             "mainClass": "com.example.prueba",

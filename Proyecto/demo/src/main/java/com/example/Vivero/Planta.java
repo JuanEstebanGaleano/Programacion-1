@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Vivero;
 
 public class Planta {
     private String nombreComun;

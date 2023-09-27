@@ -1,5 +1,4 @@
-package com.example;
-import com.example.Planta;
+package com.example.Vivero;
 public class ProyecVivero {
     public static void main(String[] args) {
         // Crear una instancia de Planta
@@ -9,8 +8,6 @@ public class ProyecVivero {
         planta1.imprimirDetalles();
 
         System.out.println("--------------------");
-        
-        // Crear una instancia de Cliente
         Cliente cliente1 = new Cliente("John Doe");
 
         // Adquirir la planta para el cliente
