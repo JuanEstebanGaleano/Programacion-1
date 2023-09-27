@@ -1,14 +1,13 @@
 package com.example.Vivero;
 public class ProyecVivero {
     public static void main(String[] args) {
-        // Crear una instancia de Planta
-        Planta planta1 = new Planta("Orquídea", "Phalaenopsis", "Flor", "Luz indirecta", "Riego semanal");
+        Planta planta1 = new Planta("Orquídea", "Phalaenopsis", "Flor", "Luz indirecta", "Riego semanal\n");
 
         // Imprimir los detalles de la planta
         planta1.imprimirDetalles();
 
-        System.out.println("--------------------");
-        Cliente cliente1 = new Cliente("John Doe");
+        System.out.println("--------------------\n");
+        Cliente cliente1 = new Cliente("Juan Esteban");
 
         // Adquirir la planta para el cliente
         cliente1.adquirirPlanta(planta1);
