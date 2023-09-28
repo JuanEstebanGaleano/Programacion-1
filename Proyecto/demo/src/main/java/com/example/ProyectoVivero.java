@@ -237,7 +237,7 @@ public class ProyectoVivero {
         System.out.println("--------------------\n");
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         System.out.println("Nombre del cliente: " + nombreCliente1);
-        System.out.println("Planta Adquiririda : " + adquirirPlantasCliente1);
+        System.out.println("Planta Adquiririda: " + adquirirPlantasCliente1);
         System.out.println("Fecha de registro: " + sdf.format(fechaRegistroCliente1));
     }
 
