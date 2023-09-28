@@ -1,0 +1,154 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ProyecVivero",
+            "request": "launch",
+            "mainClass": "com.example.Vivero.ProyecVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "ProyecVivero",
+            "request": "launch",
+            "mainClass": "com.Vivero.ProyecVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "prueba",
+            "request": "launch",
+            "mainClass": "prueba",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "prueba",
+            "request": "launch",
+            "mainClass": "com.example.prueba",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "ProyecVivero",
+            "request": "launch",
+            "mainClass": "com.example.ProyecVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoVivero",
+            "request": "launch",
+            "mainClass": "ProyectoVivero",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Vehiculo",
+            "request": "launch",
+            "mainClass": "Vehiculo",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdivinarNumero",
+            "request": "launch",
+            "mainClass": "AdivinarNumero",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "BucleFor",
+            "request": "launch",
+            "mainClass": "BucleFor",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "DiasDeLaSemana",
+            "request": "launch",
+            "mainClass": "DiasDeLaSemana",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "HolaMundo",
+            "request": "launch",
+            "mainClass": "HolaMundo",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "ImprimirNumeros",
+            "request": "launch",
+            "mainClass": "ImprimirNumeros",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "PasoPorValor",
+            "request": "launch",
+            "mainClass": "PasoPorValor",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "Persona",
+            "request": "launch",
+            "mainClass": "Persona",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "TestNumero",
+            "request": "launch",
+            "mainClass": "TestNumero",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "Variables",
+            "request": "launch",
+            "mainClass": "Variables",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "VariablesDouble",
+            "request": "launch",
+            "mainClass": "VariablesDouble",
+            "projectName": "Programacion-1_ebba07c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.example.Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoVivero",
+            "request": "launch",
+            "mainClass": "com.example.ProyectoVivero",
+            "projectName": "demo"
+        }
+    ]
+}
