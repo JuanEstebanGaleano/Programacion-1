@@ -1,161 +1,150 @@
 package com.example;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.swing.JOptionPane;
 
-// Clase para representar una planta
-class ClasePlanta {
-    private String nombreComun;
-    private String nombreCientifico;
-    private String tipo;
-    private String requerimientosLuz;
-    private String requerimientosAgua;
+public class RegistroPlantas {
+    private String NombreComun;
+    private String NombreCientifico;
+    private String Tipo;
+    private String Requerimientos;
+    private String CuidadosEspecificos;
 
-    // Constructor
-    public ClasePlanta(String nombreComun, String nombreCientifico, String tipo, String requerimientosLuz,
-            String requerimientosAgua) {
-        this.nombreComun = nombreComun;
-        this.nombreCientifico = nombreCientifico;
-        this.tipo = tipo;
-        this.requerimientosLuz = requerimientosLuz;
-        this.requerimientosAgua = requerimientosAgua;
+    // Constructor de la clase
+    public RegistroPlantas(String NombreComun, String NombreCientifico, String Tipo, String Requerimientos,
+            String CuidadosEspecificos) {
+        this.NombreComun = NombreComun;
+        this.NombreCientifico = NombreCientifico;
+        this.Tipo = Tipo;
+        this.Requerimientos = Requerimientos;
+        this.CuidadosEspecificos = CuidadosEspecificos;
     }
 
-    // Métodos getters y setters para nombreComun
     public String getNombreComun() {
-        return nombreComun;
+        return NombreComun;
     }
 
     public void setNombreComun(String nombreComun) {
-        this.nombreComun = nombreComun;
-    }
-
-    // Métodos getters y setters para nombreCientifico
-    public String getNombreCientifico() {
-        return nombreCientifico;
+        NombreComun = nombreComun;
     }
 
     public void setNombreCientifico(String nombreCientifico) {
-        this.nombreCientifico = nombreCientifico;
+        NombreCientifico = nombreCientifico;
     }
 
-    // Métodos getters y setters para tipo
+    public String getNombreCientifico() {
+        return NombreCientifico;
+    }
+
+    public String getRequerimientos() {
+        return Requerimientos;
+    }
+
+    public void setCuidadosEspecificos(String cuidadosEspecificos) {
+        CuidadosEspecificos = cuidadosEspecificos;
+    }
+
     public String getTipo() {
-        return tipo;
+        return Tipo;
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        Tipo = tipo;
     }
 
-    // Métodos getters y setters para requerimientosLuz
-    public String getRequerimientosLuz() {
-        return requerimientosLuz;
-    }
-
-    public void setRequerimientosLuz(String requerimientosLuz) {
-        this.requerimientosLuz = requerimientosLuz;
-    }
-
-    // Métodos getters y setters para requerimientosAgua
-    public String getRequerimientosAgua() {
-        return requerimientosAgua;
-    }
-
-    public void setRequerimientosAgua(String requerimientosAgua) {
-        this.requerimientosAgua = requerimientosAgua;
-    }
-
-    public String toString() {
-        return "Nombre común: " + nombreComun + ", Nombre científico: " + nombreCientifico;
+    // Método para mostrar la informacion de la planta
+    public void mostrarPlanta() {
+        System.out.println("Nombre comun: " + NombreComun);
+        System.out.println("Nombre cientifico: " + NombreCientifico);
+        System.out.println("Tipo: " + Tipo);
+        System.out.println("Requerimientos: " + Requerimientos);
+        System.out.println("Cuidados especificos: " + CuidadosEspecificos);
     }
 }
+// Clase de seguimiento para las plantas
+public class SeguimientoPlantas {
+    private String SeguimientoDelEstadoSalud;
+    private String SeguimientoDelCrecimiento;
+    private String Herramientas;
+    public int seg;
 
-class Cliente {
-    // Clase para representar un cliente
-    private String nombre;
-    private String correo;
-    private List<ClasePlanta> plantasAdquiridas;
-
-    public Cliente(String nombre, String correo) {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.plantasAdquiridas = new ArrayList<>();
+    public String getSeguimientoDelEstadoSalud() {
+        return SeguimientoDelEstadoSalud;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setSeguimientoDelEstadoSalud(String seguimientoDelEstadoSalud) {
+        SeguimientoDelEstadoSalud = seguimientoDelEstadoSalud;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getSeguimientoDelCrecimiento() {
+        return SeguimientoDelCrecimiento;
     }
 
-    public String getCorreo() {
-        return correo;
+    public void setSeguimientoDelCrecimiento(String seguimientoDelCrecimiento) {
+        SeguimientoDelCrecimiento = seguimientoDelCrecimiento;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public String getHerramientas() {
+        return Herramientas;
     }
 
-    public void agregarPlantaAdquirida(ClasePlanta planta) {
-        plantasAdquiridas.add(planta);
+    public void setHerramientas(String herramientas) {
+        Herramientas = herramientas;
     }
 
-    public List<ClasePlanta> getPlantasAdquiridas() {
-        return plantasAdquiridas;
-    }
-}
-
-class RegistroCuidado {
-
-    // Clase para representar un registro de cuidado de una planta
-    private ClasePlanta planta;
-    private Date fecha;
-    private String tipoCuidado;
-
-    public RegistroCuidado() {
-    }
-
-    public ClasePlanta getPlanta() {
-        return planta;
-    }
-
-    public void setPlanta(ClasePlanta planta) {
-        this.planta = planta;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getTipoCuidado() {
-        return tipoCuidado;
-    }
-
-    public void setTipoCuidado(String tipoCuidado) {
-        this.tipoCuidado = tipoCuidado;
+    public void realizarSeguimiento() {
+        seg = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de herramienta que utilizará"));
+        switch (seg) {
+            case 1:
+                JOptionPane.showMessageDialog(null, "Abono");
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null, "Fechas de riego");
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null, "Trasplantes");
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Herramienta no reconocida");
+        }
     }
 }
+// Clase de los clientes
+public class Clientes {
+    private String adquirirPlantas;
+    private String Preferencias;
+    private String Recordatorios;
+    private String AprenderPlantas;
 
-public class ProyectoVivero {
-    public static void main(String[] args) {
-
-        ClasePlanta planta1 = new ClasePlanta("Rosa", "Rosa sp.", "Arbusto", "Luz directa", "Riego regular");
-        String nombreComunPlanta1 = planta1.getNombreComun(); // Obtener el nombre común de la planta
-        planta1.setNombreComun("Nueva Rosa"); // Establecer un nuevo nombre común para la planta
-
-        Cliente cliente1 = new Cliente("Juan", "juan@example.com");
-        String nombreCliente1 = cliente1.getNombre(); // Obtener el nombre del cliente
-        cliente1.setNombre("Nuevo Juan"); // Establecer un nuevo nombre para el cliente
-
-        System.out.println("Información de la planta 1: " + planta1);
-        System.out.println("Información del cliente 1: " + nombreCliente1);
+    public String getAdquirirPlantas() {
+        return adquirirPlantas;
     }
+
+    public void setAdquirirPlantas(String adquirirPlantas) {
+        this.adquirirPlantas = adquirirPlantas;
+    }
+
+    public String getAprenderPlantas() {
+        return AprenderPlantas;
+    }
+
+    public void setAprenderPlantas(String aprenderPlantas) {
+        AprenderPlantas = aprenderPlantas;
+    }
+
+    public String getPreferencias() {
+        return Preferencias;
+    }
+
+    public void setPreferencias(String preferencias) {
+        Preferencias = preferencias;
+    }
+
+    public String getRecordatorios() {
+        return Recordatorios;
+    }
+
+    public void setRecordatorios(String recordatorios) {
+        Recordatorios = recordatorios;
+    }
+
 }
