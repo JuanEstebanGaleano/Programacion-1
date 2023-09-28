@@ -1,8 +1,11 @@
+//Autor: Juan Esteban Galeano Bolaños
 package com.example;
 
 import javax.swing.JOptionPane;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class RegistroPlantas {
+class RegistroPlantas {
     private String NombreComun;
     private String NombreCientifico;
     private String Tipo;
@@ -60,12 +63,19 @@ public class RegistroPlantas {
         System.out.println("Cuidados especificos: " + CuidadosEspecificos);
     }
 }
-// Clase de seguimiento para las plantas
-public class SeguimientoPlantas {
+
+class SeguimientoPlantas {
     private String SeguimientoDelEstadoSalud;
     private String SeguimientoDelCrecimiento;
     private String Herramientas;
     public int seg;
+
+    // Constructor de la clase
+    public SeguimientoPlantas(String SeguimientoDelEstadoSalud, String SeguimientoDelCrecimiento, String Herramientas) {
+        this.SeguimientoDelEstadoSalud = SeguimientoDelEstadoSalud;
+        this.SeguimientoDelCrecimiento = SeguimientoDelCrecimiento;
+        this.Herramientas = Herramientas;
+    }
 
     public String getSeguimientoDelEstadoSalud() {
         return SeguimientoDelEstadoSalud;
@@ -91,29 +101,46 @@ public class SeguimientoPlantas {
         Herramientas = herramientas;
     }
 
-    public void realizarSeguimiento() {
+    public String realizarSeguimiento() {
+        String herramientaUtilizada;
         seg = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de herramienta que utilizará"));
         switch (seg) {
             case 1:
-                JOptionPane.showMessageDialog(null, "Abono");
+                herramientaUtilizada = "Abono";
                 break;
             case 2:
-                JOptionPane.showMessageDialog(null, "Fechas de riego");
+                herramientaUtilizada = "Fechas de riego";
                 break;
             case 3:
-                JOptionPane.showMessageDialog(null, "Trasplantes");
+                herramientaUtilizada = "Trasplantes";
                 break;
             default:
-                JOptionPane.showMessageDialog(null, "Herramienta no reconocida");
+                herramientaUtilizada = "Herramienta no reconocida";
         }
+        return herramientaUtilizada;
     }
 }
-// Clase de los clientes
-public class Clientes {
+
+class Clientes {
     private String adquirirPlantas;
     private String Preferencias;
     private String Recordatorios;
     private String AprenderPlantas;
+    private String nombre;
+    private Date fechaRegistro;
+
+    public Clientes(String nombre) {
+        this.nombre = nombre;
+        this.fechaRegistro = new Date(); // Registra la fecha actual al crear un cliente
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Date getFechaRegistro() {
+        return fechaRegistro;
+    }
 
     public String getAdquirirPlantas() {
         return adquirirPlantas;
@@ -145,6 +172,35 @@ public class Clientes {
 
     public void setRecordatorios(String recordatorios) {
         Recordatorios = recordatorios;
+    }
+}
+
+public class ProyectoVivero {
+    public static void main(String[] args) {
+        // Datos de plantas
+        RegistroPlantas planta1 = new RegistroPlantas("Rosa", "Rosa sp.", "Arbusto", "Luz directa", "Riego regular");
+        String nombreComunPlanta1 = planta1.getNombreComun(); // Obtener el nombre común de la planta
+        planta1.setNombreComun("Nueva Rosa"); // Establecer un nuevo nombre común para la planta
+
+        // Datos de cliente
+        Clientes cliente1 = new Clientes("Juan");
+        cliente1.setAdquirirPlantas("Rosa");
+        String adquirirPlantasCliente1 = cliente1.getAdquirirPlantas();
+        String nombreCliente1 = cliente1.getNombre();
+        Date fechaRegistroCliente1 = cliente1.getFechaRegistro();
+
+        // Datos de Seguimiento de plantas
+        SeguimientoPlantas seguimiento1 = new SeguimientoPlantas("Bueno", "Normal", "Abono");
+        String herramientaUtilizada = seguimiento1.realizarSeguimiento();// Realizar el seguimiento de la planta
+        // Imprimir Informacion de la planta
+        System.out.println("Información de la planta 1: " + planta1.getNombreComun());
+        planta1.mostrarPlanta();
+        System.out.println("Adquirir planta: " + adquirirPlantasCliente1);
+        System.out.println("Herramienta utilizada: " + herramientaUtilizada);
+        // Imprimir Registro de clientes
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println("Nombre del cliente: " + nombreCliente1);
+        System.out.println("Fecha de registro: " + sdf.format(fechaRegistroCliente1));
     }
 
 }
