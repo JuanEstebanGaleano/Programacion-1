@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "EjemploDEncapsulamiento.demo.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
             "name": "ProyecVivero",
             "request": "launch",
             "mainClass": "com.example.Vivero.ProyecVivero",

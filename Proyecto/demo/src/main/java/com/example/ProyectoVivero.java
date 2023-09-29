@@ -210,7 +210,7 @@ public class ProyectoVivero {
         // Datos de plantas
         RegistroPlantas planta1 = new RegistroPlantas("Rosa", "Rosa sp.", "Arbusto", "Luz directa", "Riego regular");
         String nombreComunPlanta1 = planta1.getNombreComun(); // Obtener el nombre común de la planta
-        planta1.setNombreComun("Nueva Rosa"); // Establecer un nuevo nombre común para la planta
+        planta1.setNombreComun("Nueva Rosa"); // Nuevo nombre común para la planta
         planta1.setFechaRiego(new Date()); // Establecer la fecha de riego actual
 
         // Datos de cliente
