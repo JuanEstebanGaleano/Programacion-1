@@ -8,6 +8,34 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.example.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "clasesabstracta.demo.src.main.java.com.example.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Abstracta.demo.src.main.java.com.example.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "EjemploDEncapsulamiento.demo.Main",
             "projectName": "Programacion-1_65007cec"
         },
