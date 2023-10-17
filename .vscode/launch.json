@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CuentaBancaria",
+            "request": "launch",
+            "mainClass": "CuentaBancaria",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
             "name": "cuenta",
             "request": "launch",
             "mainClass": "cuenta",
