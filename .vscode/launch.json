@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalcularElPromedio",
+            "request": "launch",
+            "mainClass": "CalcularElPromedio",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "banco",
+            "request": "launch",
+            "mainClass": "prueba.banco",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "banco",
+            "request": "launch",
+            "mainClass": "banco",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "aeropuerto.demo.src.main.java.com.example.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Persona",
+            "request": "launch",
+            "mainClass": "Persona",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "AdivinarNumero",
+            "request": "launch",
+            "mainClass": "AdivinarNumero",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "BucleFor",
+            "request": "launch",
+            "mainClass": "BucleFor",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "CuentaBancaria$cuentaBancaria",
+            "request": "launch",
+            "mainClass": "CuentaBancaria$cuentaBancaria",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
             "name": "CuentaBancaria",
             "request": "launch",
             "mainClass": "CuentaBancaria",

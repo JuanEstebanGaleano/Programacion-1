@@ -1,9 +1,9 @@
- class CuentaBancaria {
+public class banco {
     private String titular;
     private double saldo;
     private String numeroCuenta;
 
-    public CuentaBancaria(String titular, String numeroCuenta) {
+    public banco(String titular, String numeroCuenta) {
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
         this.saldo = 0.0; // El saldo se inicializa en cero
@@ -38,14 +38,13 @@
     public String getNumeroCuenta() {
         return numeroCuenta;
     }
-    public class cuentaBancaria{
+
     public static void main(String[] args) {
-        CuentaBancaria cuenta = new CuentaBancaria("Juan Perez", "12345");
+        banco cuenta = new  banco("Juan Perez", "12345");
         
         cuenta.depositar(1000);
         cuenta.retirar(500);
         
         System.out.println("Saldo actual de la cuenta de " + cuenta.getTitular() + ": $" + cuenta.consultarSaldo());
-    }
     }
 }
