@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cuenta",
+            "request": "launch",
+            "mainClass": "cuenta",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "cuentaBancaria",
+            "request": "launch",
+            "mainClass": "cuentaBancaria",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "cuentaBancaria",
+            "request": "launch",
+            "mainClass": "banco.demo.cuentaBancaria",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
