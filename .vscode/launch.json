@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EncontrarNumeroMasGrande",
+            "request": "launch",
+            "mainClass": "TallerArray.demo.src.main.java.com.EncontrarNumeroMasGrande",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "EncontrarNumeroMasGrande",
+            "request": "launch",
+            "mainClass": "TallerArray.demo.src.main.java.com.example.EncontrarNumeroMasGrande",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "TallerArray.demo.src.main.java.com.example.Main",
+            "projectName": "Programacion-1_65007cec"
+        },
+        {
+            "type": "java",
             "name": "CalcularElPromedio",
             "request": "launch",
             "mainClass": "CalcularElPromedio",
