@@ -4,14 +4,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 //Clase del Registro de las plantas
 
-public class RegistroPlantas {
+public abstract class RegistroPlantas {
     private String NombreComun;
     private String NombreCientifico;
     private String Tipo;
     private String Requerimientos;
     private String CuidadosEspecificos;
     private Date fechaRiego;
-
+    
+    public interface CrecimientoPlanta {
+        void actualizarCrecimientoPlanta();
+    }
     // Constructor de la clase
     public RegistroPlantas(String NombreComun, String NombreCientifico, String Tipo, String Requerimientos,
             String CuidadosEspecificos) {

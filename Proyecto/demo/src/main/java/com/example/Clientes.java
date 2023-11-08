@@ -2,7 +2,7 @@ package com.example;
 import java.util.Date;
 
 // Clase de clientes
-public class Clientes {
+public abstract class Clientes {
     private String adquirirPlantas;
     private String Preferencias;
     private String Recordatorios;
