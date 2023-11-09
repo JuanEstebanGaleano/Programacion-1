@@ -8,6 +8,13 @@
             "type": "java",
             "name": "EncontrarNumeroMasGrande",
             "request": "launch",
+            "mainClass": "com.EncontrarNumeroMasGrande",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "EncontrarNumeroMasGrande",
+            "request": "launch",
             "mainClass": "TallerArray.demo.src.main.java.com.EncontrarNumeroMasGrande",
             "projectName": "Programacion-1_65007cec"
         },
