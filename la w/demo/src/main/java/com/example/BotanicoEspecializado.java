@@ -18,7 +18,11 @@ class BotanicoEspecializado extends Botanico {
 
     @Override
     public void actualizarCuidado(CuidadoPlanta cuidado) {
-        // Implementar la actualización del cuidado
+        int index = cuidados.indexOf(cuidado);
+        if (index != -1) {
+            cuidados.remove(index);
+            cuidados.add(index, cuidado);
+        }    
     }
 
     @Override

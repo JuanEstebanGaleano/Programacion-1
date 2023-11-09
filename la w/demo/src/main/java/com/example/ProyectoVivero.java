@@ -1,28 +1,23 @@
 package com.example;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.ArrayList;
 import java.util.List;
 
-
 public class ProyectoVivero {
-     public static void main(String[] args) {
-        // Crear una planta de tipo Rosa
+    public static void main(String[] args) {
         Planta rosa = new Rosa("Rosa común", "Rosa sp.", "Arbusto", "Luz directa", "Riego regular");
         rosa.setFechaRiego(new Date());
 
-        // Crear un botánico especializado
-        BotanicoEspecializado botanico = new BotanicoEspecializado("Licencia1", "NombreBotanico", "ApellidoBotanico", "correo@example.com", "123456789");
+        BotanicoEspecializado botanico = new BotanicoEspecializado("Licencia1", "NombreBotanico", "ApellidoBotanico",
+                "correo@example.com", "123456789");
 
-        // Crear un cuidado para la planta
         CuidadoPlanta cuidado = new CuidadoPlanta("Área1", new Date());
 
-        // Asignar el botánico al cuidado
         botanico.agregarCuidado(cuidado);
 
-        // Registrar el resultado del cuidado
         cuidado.registrarResultadoCuidado("Cuidado exitoso");
 
-        // Obtener cuidados del botánico
         List<CuidadoPlanta> cuidadosDelBotanico = botanico.obtenerCuidados();
 
         // Mostrar información de la planta
@@ -33,12 +28,27 @@ public class ProyectoVivero {
         System.out.println("Información del botánico:");
         System.out.println(botanico);
 
+        // Datos de cliente
+        System.out.println("--------------------\n");
+        Clientes cliente1 = new Clientes("Juan");
+        cliente1.setAdquirirPlantas("Rosa");
+        String adquirirPlantasCliente1 = cliente1.getAdquirirPlantas();
+        String nombreCliente1 = cliente1.getNombre();
+        Date fechaRegistroCliente1 = cliente1.getFechaRegistro();
+
         // Mostrar información del cuidado de la planta
         System.out.println("Información del cuidado de la planta:");
         System.out.println("Área de cuidado: " + cuidado.getAreaCuidado());
         System.out.println("Fecha y hora del cuidado: " + cuidado.getFechaHoraCuidado());
         System.out.println("Resultado del cuidado: " + cuidado.getResultadoCuidado());
         System.out.println("Estado del cuidado: " + cuidado.getEstadoCuidado());
+        // System.out.println("Herramienta utilizada: " + herramientaUtilizada);
+
+        // Imprimir Registro de clientes
+        System.out.println("--------------------\n");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println("Nombre del cliente: " + nombreCliente1);
+        System.out.println("Planta Adquiririda: " + adquirirPlantasCliente1);
+        System.out.println("Fecha de registro: " + sdf.format(fechaRegistroCliente1));
     }
 }
-
