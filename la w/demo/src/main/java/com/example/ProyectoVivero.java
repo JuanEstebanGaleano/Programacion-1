@@ -42,7 +42,11 @@ public class ProyectoVivero {
         System.out.println("Fecha y hora del cuidado: " + cuidado.getFechaHoraCuidado());
         System.out.println("Resultado del cuidado: " + cuidado.getResultadoCuidado());
         System.out.println("Estado del cuidado: " + cuidado.getEstadoCuidado());
-        // System.out.println("Herramienta utilizada: " + herramientaUtilizada);
+
+        // Datos de Seguimiento de plantas
+        CuidadoPlanta seguimiento1 = new CuidadoPlanta("Bueno", "Normal", "Abono");
+        String herramientaUtilizada = seguimiento1.realizarSeguimiento();// Realizar el seguimiento de la planta
+        System.out.println("Herramienta utilizada: " + herramientaUtilizada);
 
         // Imprimir Registro de clientes
         System.out.println("--------------------\n");

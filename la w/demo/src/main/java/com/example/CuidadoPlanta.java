@@ -22,6 +22,9 @@ class CuidadoPlanta {
         this.estadoCuidado = "PENDIENTE";
     }
 
+    public CuidadoPlanta(String string, String string2, String string3) {
+    }
+
     public String getAreaCuidado() {
         return areaCuidado;
     }
