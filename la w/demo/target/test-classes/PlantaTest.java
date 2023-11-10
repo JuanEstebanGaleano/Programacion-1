@@ -19,6 +19,7 @@ class PlantaTest {
 
     @Test
     void testGetNombreCientifico() {
+
         Planta planta = new Planta("nombreComun", "nombreCientifico", "tipo", "requerimientos", "cuidadosEspecificos");
         assertEquals("nombreCientifico", planta.getNombreCientifico());
     }
