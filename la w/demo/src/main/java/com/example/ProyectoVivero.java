@@ -6,23 +6,24 @@ import java.util.List;
 
 public class ProyectoVivero {
     public static void main(String[] args) {
+        System.out.println("--------------------\n");
         Planta rosa = new Rosa("Rosa común", "Rosa sp.", "Arbusto", "Luz directa", "Riego regular");
         rosa.setFechaRiego(new Date());
-
-        BotanicoEspecializado botanico = new BotanicoEspecializado("Licencia1", "NombreBotanico", "ApellidoBotanico",
-                "correo@example.com", "123456789");
+    
+        BotanicoEspecializado botanico = new BotanicoEspecializado("Licencia1", "Jeronimo ", "Guzman",
+                "elwestconsin12@gmail.com", "3127610096");
 
         CuidadoPlanta cuidado = new CuidadoPlanta("Área1", new Date());
 
         botanico.agregarCuidado(cuidado);
 
         cuidado.registrarResultadoCuidado("Cuidado exitoso");
-
         List<CuidadoPlanta> cuidadosDelBotanico = botanico.obtenerCuidados();
 
         // Mostrar información de la planta
         System.out.println("Información de la planta:");
         System.out.println(rosa);
+        System.out.println("--------------------\n");
 
         // Mostrar información del botánico
         System.out.println("Información del botánico:");
@@ -43,11 +44,16 @@ public class ProyectoVivero {
         System.out.println("Resultado del cuidado: " + cuidado.getResultadoCuidado());
         System.out.println("Estado del cuidado: " + cuidado.getEstadoCuidado());
 
-        // Datos de Seguimiento de plantas
-        CuidadoPlanta seguimiento1 = new CuidadoPlanta("Bueno", "Normal", "Abono");
-        String herramientaUtilizada = seguimiento1.realizarSeguimiento();// Realizar el seguimiento de la planta
-        System.out.println("Herramienta utilizada: " + herramientaUtilizada);
-
+          // Datos de Seguimiento de plantas
+          SeguimientoPlantas seguimiento1 = new SeguimientoPlantas("Bueno", "Normal", "Abono");
+          String herramientaUtilizada = seguimiento1.realizarSeguimiento();// Realizar el seguimiento de la planta
+        
+          // Imprimir El seguimiento de la planta
+          System.out.println("--------------------\n");
+          System.out.println("El seguimiento de la planta: ");
+          seguimiento1.mostrarSeguimiento();
+          System.out.println("Herramienta utilizada: " + herramientaUtilizada);
+  
         // Imprimir Registro de clientes
         System.out.println("--------------------\n");
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");

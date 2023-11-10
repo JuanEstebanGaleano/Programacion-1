@@ -70,6 +70,7 @@ abstract class Planta {
                "Requerimientos: " + requerimientos + "\n" +
                "Cuidados específicos: " + cuidadosEspecificos + "\n";
     }
+
 }
 
 

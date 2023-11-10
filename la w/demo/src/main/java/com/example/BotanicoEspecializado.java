@@ -34,4 +34,5 @@ class BotanicoEspecializado extends Botanico {
     public List<CuidadoPlanta> obtenerCuidados() {
         return cuidados;
     }
+    
 }

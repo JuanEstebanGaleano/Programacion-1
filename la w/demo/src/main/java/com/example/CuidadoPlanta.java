@@ -2,8 +2,6 @@ package com.example;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.swing.JOptionPane;
 // Clase para representar cuidados de las plantas
 class CuidadoPlanta {
     private String areaCuidado;
@@ -85,25 +83,5 @@ class CuidadoPlanta {
                "Resultado del cuidado: " + resultadoCuidado + "\n" +
                "Estado del cuidado: " + estadoCuidado + "\n";
     }
-    // Seguimiento de la planta
-    public String realizarSeguimiento() {
-        String herramientaUtilizada;
-        seg = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de herramienta que utilizará"));
-        switch (seg) {
-            case 1:
-                herramientaUtilizada = "Abono";
-                break;
-            case 2:
-                herramientaUtilizada = "Fechas de riego";
-                break;
-            case 3:
-                herramientaUtilizada = "Trasplantes";
-                break;
-            default:
-                herramientaUtilizada = "Herramienta no reconocida";
-        }
-        return herramientaUtilizada;
-    }
-
-   
+  
 }
